@@ -1,0 +1,145 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container,.batman-logo{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  width: 100%;
+  height: 100vh;
+  background: black;
+}
+.batman-logo{
+  width: 80vmin;
+  height: 65vmin;
+  border-radius: 50%;
+  background: white;
+}
+.bat-head{
+  position: absolute;
+  display: flex;
+  bottom: 34.7vmin;
+  background: black;
+  height: 4vmin;
+  width: 5vmin;
+  border-radius: 40%
+}
+.bat-ear{
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 2vmin solid transparent;
+  border-left: 3vmin solid black;
+  border-bottom: 2vmin solid transparent;
+}
+.bat-ear:after{
+  content: "";
+  position: absolute;
+  top: -2vmin;
+  left: -0.7vmin;
+  width: 0;
+  height: 0;
+  border-top: 2vmin solid transparent;
+  border-right: 3vmin solid black;
+  border-bottom: 2vmin solid transparent;
+}
+.bat-body{
+  position: absolute;
+  top: 30vmin;
+  height: 7vmin;
+  width: 30vmin;
+  background: black;
+}
+.bat-tail{
+  position: absolute;
+  display: flex;
+  bottom: 13vmin;
+}
+#wing-top-left{
+  width: 14vmin;
+  height: 12vmin;
+  overflow: hidden;
+  position: relative;
+  top: -12vmin;
+}
+#wing-top-right{
+  width: 14vmin;
+  height: 12vmin;
+  overflow: hidden;
+  position: relative;
+  top: -39vmin;
+  left: 16vmin;
+}
+#wing-side-left{
+  width: 14vmin;
+  height: 15vmin;
+  overflow: hidden;
+  position: relative;
+  top: -21vmin;
+  right: 14vmin;
+}
+#wing-side-right{
+  width: 14vmin;
+  height: 15vmin;
+  overflow: hidden;
+  position: relative;
+  top: -48vmin;
+  left: 30vmin;
+}
+#tail-left{
+  width: 14vmin;
+  height: 15vmin;
+  overflow: hidden;
+  position: relative;
+}
+#tail-right{
+  width: 14vmin;
+  height: 15vmin;
+  overflow: hidden;
+  position: relative;
+}
+#wing-top-left:before,#wing-top-right:before,
+#wing-side-left:before,#wing-side-right:before,
+#tail-left:before,#tail-right:before{
+  content: "";
+  display: block;
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  border-radius: 50%;
+}
+#wing-top-left:before{
+  bottom: 0;
+  left: 0;
+  box-shadow: -15vmin 15vmin 0 0 black;
+}
+#wing-top-right:before{
+  bottom: 0;
+  right: 0;
+  box-shadow: 15vmin 15vmin 0 0 black;
+}
+#wing-side-left:before{
+  top: 0;
+  right: 0;
+  box-shadow: 15vmin -15vmin 0 0 black;
+}
+#wing-side-right:before{
+  top: 0;
+  left: 0;
+  box-shadow: -15vmin -15vmin 0 0 black;
+}
+#tail-left:before{
+  top: 0;
+  right: 0;
+  box-shadow: 15vmin -15vmin 0 0 black;
+}
+#tail-right:before{
+  top: 0;
+  left: 0;
+  box-shadow: -15vmin -15vmin 0 0 black;
+}
