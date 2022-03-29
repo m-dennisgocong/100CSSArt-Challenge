@@ -1,0 +1,41 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20vh;
+  background-color: gray;
+}
+.bridge{
+  height: 4vmin;
+  width: 80vmin;
+  background-color: black;
+}
+.frame-1{
+  position: relative;
+  top: 4vmin;
+  height: 4vmin;
+  width: 30vmin;
+  background-color: inherit;
+
+}
+.frame-2{
+  position: relative;
+  top: 4vmin;
+  left: 2.5vmin;
+  height: 4vmin;
+  width: 25vmin;
+  background-color: inherit;
+}
+.frame-3{
+  position: relative;
+  top: 4vmin;
+  left: 5vmin;
+  height: 4vmin;
+  width: 20vmin;
+  background-color: inherit;
+}
