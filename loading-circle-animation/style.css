@@ -1,0 +1,26 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20vh;
+  background-color: #000;
+}
+.circle{
+  width: 35vmin;
+  height: 35vmin;
+  border-radius: 50%;
+  border: 2vmin solid transparent;
+  border-top-color: gray;
+  border-bottom-color: gray;
+  animation: spin 1s ease-in-out infinite;
+}
+@keyframes spin{
+  to {
+    transform: rotate(360deg);
+  }
+}
