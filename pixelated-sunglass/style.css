@@ -8,34 +8,60 @@ body{
   align-items: center;
   justify-content: center;
   margin-top: 20vh;
-  background-color: gray;
+  background-color: #F7F5F2;
 }
 .bridge{
-  height: 4vmin;
+  height: 2vmin;
   width: 80vmin;
-  background-color: black;
+  background-color: #000;
 }
 .frame-1{
   position: relative;
-  top: 4vmin;
-  height: 4vmin;
+  top: 2vmin;
+  height: 2vmin;
   width: 30vmin;
   background-color: inherit;
-
+  box-shadow: 33vmin 0vmin;
+}
+.frame-1::before{
+  content: "";
+  position: absolute;
+  height: 2vmin;
+  width: 2vmin;
+  background-color: #fff;
+  left: 23vmin;
+  box-shadow:59vmin 2vmin #000,
+  33vmin 0vmin #fff,57vmin 0vmin #000,
+  -2vmin 2vmin #fff, 31vmin 2vmin #fff,
+  -4vmin 4vmin #fff, 29vmin 4vmin #fff;
 }
 .frame-2{
   position: relative;
-  top: 4vmin;
+  top: 2vmin;
   left: 2.5vmin;
-  height: 4vmin;
+  height: 2vmin;
   width: 25vmin;
   background-color: inherit;
+  box-shadow: 33vmin 0vmin;
+  z-index: -1;
 }
 .frame-3{
   position: relative;
-  top: 4vmin;
+  top: 2vmin;
   left: 5vmin;
-  height: 4vmin;
+  height: 2vmin;
   width: 20vmin;
   background-color: inherit;
+  box-shadow: 33vmin 0vmin;
+  z-index: -1;
+}
+.frame-3::before{
+  content: "";
+  position: absolute;
+  top: 2vmin;
+  left: 2.3vmin;
+  height: 2vmin;
+  width: 15vmin;
+  background-color: inherit;
+  box-shadow: 33vmin 0vmin;
 }
