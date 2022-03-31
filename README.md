@@ -12,3 +12,4 @@ I'm always fascinated how other developer create amazing art by only using HTML 
 - [2] avocado-fruit <a href="https://codepen.io/dennisgocong/full/zYpZXjB"> View Here!</a>
 - [3] loading-circle-animation <a href="https://codepen.io/dennisgocong/full/QWaggKG"> View Here!</a>
 - [4] pixelated-sunglass <a href="https://codepen.io/dennisgocong/full/XWVadVK"> View Here!</a>
+- [4] twitter-logo <a href="https://codepen.io/dennisgocong/full/WNdEqpv"> View Here!</a>
