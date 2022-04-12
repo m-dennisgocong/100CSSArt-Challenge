@@ -1,0 +1,110 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  display: grid;
+  place-items: center;
+  margin-top: 30%;
+  background-color: #B9F8D3;
+}
+.container{
+  display: grid;
+  place-items: center;
+  width: 75vmin;
+  height: 75vmin;
+  border-radius: 50%;
+  background-color: #FFFBE7;
+}
+.cat-head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40vmin;
+  height: 32vmin;
+  border-radius: 50%;
+  background-color: #FDAF75;
+}
+.cat-ears::after{
+  content: "";
+  position: absolute;
+  top: 45.5vmin;
+  left: 32vmin;
+  width: 0;
+  height: 0;
+  border-right: 6vmin solid transparent;
+  border-left: 6vmin solid transparent;
+  border-bottom: 10vmin solid #FDAF75;
+  transform: rotate(-30deg);
+}
+.cat-ears::before{
+  content: "";
+  position: absolute;
+  top: 45.5vmin;
+  right: 32vmin;
+  width: 0;
+  height: 0;
+  border-right: 6vmin solid transparent;
+  border-left: 6vmin solid transparent;
+  border-bottom: 10vmin solid #FDAF75;
+  transform: rotate(30deg);
+}
+.eye-circle{
+  position: absolute;
+  top: 58vmin;
+  left: 36vmin;
+  width: 13vmin;
+  height: 13vmin;
+  border-radius: 50%;
+  background-color: #B67162;
+}
+.eyes::after{
+  content: "";
+  position: absolute;
+  left: 3vmin;
+  width: 7vmin;
+  height: 10vmin;
+  border-bottom: 1vmin solid #FDAF75;
+  border-radius: 0 0 7vmin 5vmin / 0 0 5vmin 5vmin;
+}
+.eyes::before{
+  content: "";
+  position: absolute;
+  left: 18vmin;
+  width: 7vmin;
+  height: 10vmin;
+  border-bottom: 1vmin solid #B67162;
+  border-radius: 0 0 5vmin 5vmin / 0 0 5vmin 5vmin;
+}
+.nose{
+  position: absolute;
+  bottom: 67vmin;
+  right: 45vmin;
+  width: 8vmin;
+  height: 3vmin;
+  border-radius: 50%;
+  background-color: #D54C4C;
+  z-index: 1;
+}
+.mouth::after{
+  content: "";
+  position: absolute;
+  left: 41vmin;
+  width: 10vmin;
+  height: 10vmin;
+  border-bottom: 1vmin solid #B67162;
+  border-radius: 0 0 7vmin 5vmin / 0 0 5vmin 5vmin;
+  transform: rotate(-50deg);
+}
+.mouth::before{
+  content: "";
+  position: absolute;
+  top: 68vmin;
+  left: 52vmin;
+  width: 10vmin;
+  height: 10vmin;
+  border-bottom: 1vmin solid #B67162;
+  border-radius: 0 0 7vmin 5vmin / 0 0 5vmin 5vmin;
+  transform: rotate(50deg);
+}
