@@ -7,9 +7,13 @@ I'm always fascinated how other developer create amazing art by only using HTML 
 - Create CodePen for testing and showcasing each css art
 - Sharing it on twitter
 
-## Completed Work
-- [1] batman-logo <a href="https://codepen.io/dennisgocong/full/vYeQyEW"> View Here!</a> 
-- [2] avocado-fruit <a href="https://codepen.io/dennisgocong/full/zYpZXjB"> View Here!</a>
-- [3] loading-circle-animation <a href="https://codepen.io/dennisgocong/full/QWaggKG"> View Here!</a>
-- [4] pixelated-sunglass <a href="https://codepen.io/dennisgocong/full/XWVadVK"> View Here!</a>
-- [5] twitter-logo <a href="https://codepen.io/dennisgocong/full/WNdEqpv"> View Here!</a>
+## My art
+<ol>
+    <li>batman-logo<a href="https://codepen.io/dennisgocong/full/vYeQyEW">View Here!</a> </li>
+    <li>avocado-fruit<a href="https://codepen.io/dennisgocong/full/zYpZXjB">View Here!</a> </li>
+    <li>loading-circle-animation<a href="https://codepen.io/dennisgocong/full/QWaggKG">View Here!</a> </li>
+    <li>pixelated-sunglass<a href="https://codepen.io/dennisgocong/full/XWVadVK">View Here!</a> </li>
+    <li>twitter-logo<a href="https://codepen.io/dennisgocong/full/WNdEqpv">View Here!</a> </li>
+    <li>cat-01<a href="https://codepen.io/dennisgocong/full/dyJqzQX">View Here!</a> </li>
+</ol>
+
