@@ -1,13 +1,22 @@
 *{
-  paddin: 0;
+  padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+:root {
+  --canvas: #dbffbd;
+  --skin-outside: rgba(13, 54, 17);
+  --skin-inside: #306635;
+  --seed: #693824;
+  --seed-dots: #ff6f36;
+  --delicious-part: #dedc73;
+  --avocado-shadow: rgba(5, 5, 5,0.4);
 }
 body{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #dbffbd;
+  background-color: var(--canvas);
   margin-top: 50vh;
 }
 div{
@@ -15,24 +24,34 @@ div{
   height: 80vmin;
   width: 60vmin;
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-  background-color: #dedc73;
-  border: 1vmin solid #306635;
-  box-shadow: 3vmin 0vmin rgba(13, 54, 17),
-  3vmin 0.5vmin 0 2vmin rgba(13, 54, 17),
-  6.5vmin 0vmin rgba(13, 54, 17),
-  15vmin 0vmin 10vmin 5vmin rgba(5, 5, 5,0.4);
+  background-color: var(--delicious-part);
+  border: 1vmin solid var(--skin-inside);
+  box-shadow: 3vmin 0vmin var(--skin-outside),
+  3vmin 0.5vmin 0 2vmin var(--skin-outside),
+  6.5vmin 0vmin var(--skin-outside),
+  15vmin 0vmin 10vmin 5vmin var(--avocado-shadow);
+}
+div::after{
+  content: "";
+  position: absolute;
+  height: 32vmin;
+  width: 32vmin;
+  background-color: var(--seed);
+  border-radius: 50%;
+  top: 30vmin;
+  left: 13vmin;
+  z-index: -1;
 }
 div::before{
   content: "";
   position: absolute;
   height: 3vmin;
   width: 3vmin;
-  background-color: #ff6f36;
+  background-color: var(--seed-dots);
   border-radius: 50%;
   top: 37vmin;
   left: 20vmin;
-  box-shadow: 5vmin -1vmin 0 1vmin #ff6f36,
-  7vmin 10vmin 0 15vmin #4a2110;
+  box-shadow: 5vmin -1vmin 0 1vmin var(--seed-dots);
 }
 .avocado{
   transform: rotate(50deg);
