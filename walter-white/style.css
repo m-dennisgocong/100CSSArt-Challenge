@@ -129,16 +129,7 @@ body{
     border-radius: 0 100% 0 0;
     transform: rotate(5deg);
 }
-/* .hair-right::before{
-    content: "";
-    position: absolute;
-    height: 20vmin;
-    width: 20vmin;
-    left: 16vmin;
-    top: -3vmin;
-    border-top: 7vmin solid var(--hair);
-    border-radius: 0 80% 0 0;
-} */
+
 .hair-right::after{
     content: "";
     position: absolute;
@@ -168,4 +159,13 @@ body{
     width: 15vmin;
     border-radius: 50%;
     background-color: var(--hair);
+}
+.mole{
+    position: absolute;
+    height: 1.5vmin;
+    width: 1.5vmin;
+    bottom: 11.5vmin;
+    right: 12vmin;
+    border-radius: 50%;
+    background-color: var(--mole);
 }
