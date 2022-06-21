@@ -7,7 +7,7 @@
 }
 :root{
     --background-primary: #ffffff;
-    --hair: #b4a556;
+    --hair: #cabb6c;
     --beard: #413922;
     --skin: #EDDFB3;
     --mole: #DFBB9D;
@@ -114,4 +114,13 @@ body{
     border-top: 0.5vmin solid var(--eye-glass);
     border-radius: 50% 50%;
     z-index: -5;
+}
+.mole{
+    position: absolute;
+    height: 1.5vmin;
+    width: 1.5vmin;
+    bottom: 11.5vmin;
+    right: 12vmin;
+    border-radius: 50%;
+    background-color: var(--mole);
 }
