@@ -1,0 +1,117 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --background-primary: #ffffff;
+    --hair: #b4a556;
+    --beard: #413922;
+    --skin: #EDDFB3;
+    --mole: #DFBB9D;
+    --eye-glass: #615b48;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+.face{
+    display: grid;
+    place-items: center;
+    position: absolute;
+    height: 40vmin;
+    width: 40vmin;
+    background-color: var(--skin);
+    border-radius: 50%;
+    z-index: -100;
+}
+/* hair */
+.face::before{
+    content: "";
+    position: absolute;
+    height: 42vmin;
+    width: 40vmin;
+    border-top: 4.3vmin solid var(--hair);
+    border-radius: 50%;
+}
+.face::after{
+    content: "";
+    position: absolute;
+    top:-3.5vmin;
+    height: 12vmin;
+    width: 17vmin;
+    border-radius: 50%;
+    border-bottom: 7.5vmin solid var(--hair);   
+}
+
+/* beard */
+.face-hair{
+    position: absolute;
+    top: 27vmin;
+    height: 14vmin;
+    width: 14.3vmin;
+    background-color: var(--skin);
+    border: 3vmin solid var(--beard);
+    border-radius: 50%;
+}
+.face-hair::before{
+    content: "";
+    position: absolute;
+    top: 2.3vmin;
+    left: 3.2vmin;
+    height: 4vmin;
+    width: 2vmin;
+    border-radius: 25% 25% 0 0;
+    background-color: var(--beard);
+}
+.face-hair::after{
+    content: "";
+    position: absolute;
+    top: 4.7vmin;
+    left: 0vmin;
+    height: 4vmin;
+    width: 9vmin;
+    background-color: var(--beard);
+}
+.eye-glass{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 17.5vmin;
+    left: 5.4vmin;
+    height: 8vmin;
+    width: 12vmin;
+    border: 0.5vmin solid var(--eye-glass);
+    background-color: var(--skin);
+    border-radius: 45% 40% 80% 60%;
+    z-index: 50;
+}
+/* right part */
+.eye-glass::before{
+    content: "";
+    position: absolute;
+    left: 16.5vmin;
+    height: 8vmin;
+    width: 12vmin;
+    border: 0.5vmin solid var(--eye-glass);
+    background-color: var(--skin);
+    border-radius: 40% 45% 60% 80%;
+    z-index: 20;
+}
+/* bridge */
+.eye-glass::after{
+    content: "";
+    position: absolute;
+    top: 1.2vmin;
+    left: 11.6vmin;
+    height: 3vmin;
+    width: 5vmin;
+    border-top: 0.5vmin solid var(--eye-glass);
+    border-radius: 50% 50%;
+    z-index: -5;
+}
