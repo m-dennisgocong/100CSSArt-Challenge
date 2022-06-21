@@ -5,7 +5,7 @@
 }
 :root{
     --background-primary: #ffffff;
-    --hair: #87805E;
+    --hair: #807230;
     --skin: #EDDFB3;
     --mole: #DFBB9D;
     --eye-glass: #615b48;
@@ -33,7 +33,7 @@ body{
     content: "";
     position: absolute;
     top: -2vmin;
-    
+    left: 12vmin;
     height: 10vmin;
     width: 19vmin;
     border-radius: 50%;
@@ -44,9 +44,9 @@ body{
 .face::after{
     content: "";
     position: absolute;
-    top: 28vmin;
-    height: 5vmin;
-    width: 15vmin;
+    top: 28.5vmin;
+    height: 4.5vmin;
+    width: 13vmin;
     border-top: 4vmin solid var(--hair);
     border-radius: 50%;
     
@@ -104,7 +104,7 @@ body{
     height: 20vmin;
     width: 20vmin;
     left: -1vmin;
-    top: -1vmin;
+    top: -4.5vmin;
     border-top: 5vmin solid var(--hair);
     border-radius: 80% 0 0 0;
 }
@@ -114,56 +114,57 @@ body{
     height: 13vmin;
     width: 20vmin;
     left: -4.5vmin;
-    top: -0.1vmin;
+    top: 1vmin;
     border-top: 6vmin solid var(--hair);
     border-radius: 80% 0 0 0;
     transform: rotate(-25deg);
 }
 .hair-right{
     position: absolute;
-    height: 20vmin;
+    height: 18vmin;
     width: 20vmin;
-    left: 20.2vmin;
-    top: 1vmin;
+    left: 21vmin;
+    top: 2.5vmin;
     border-right: 3vmin solid var(--hair);
     border-radius: 0 100% 0 0;
+    transform: rotate(5deg);
 }
-.hair-left::before{
+/* .hair-right::before{
     content: "";
     position: absolute;
     height: 20vmin;
     width: 20vmin;
-    left: 15vmin;
+    left: 16vmin;
     top: -3vmin;
     border-top: 7vmin solid var(--hair);
     border-radius: 0 80% 0 0;
-}
+} */
 .hair-right::after{
     content: "";
     position: absolute;
-    height: 20vmin;
+    height: 15vmin;
     width: 20vmin;
-    left: 0.2vmin;
-    top: -3vmin;
+    left: 0.9vmin;
+    top: -2vmin;
     border-top: 6vmin solid var(--hair);
     border-radius: 0 80% 0 0;
-    transform: rotate(10deg);
+    transform: rotate(25.1deg);
 }
 .hair-center{
     position: absolute;
     top: -4vmin;
-    left: 16vmin;
-    height: 11vmin;
+    left: 15.8vmin;
+    height: 10vmin;
     width: 15vmin;
-    border-radius: 50%;
+    border-radius: 100%;
     background-color: var(--hair);
 }
 .hair-center::before{
     content: "";
     position: absolute;
-    top: 1.5vmin;
-    left: -8vmin;
-    height: 7vmin;
+    top: 1vmin;
+    left: -6vmin;
+    height: 10vmin;
     width: 15vmin;
     border-radius: 50%;
     background-color: var(--hair);
