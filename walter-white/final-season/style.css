@@ -72,8 +72,8 @@ body{
     position: absolute;
     height: 1.5vmin;
     width: 1.5vmin;
-    bottom: 11.5vmin;
-    right: 12vmin;
+    bottom: 7vmin;
+    right: 10vmin;
     border-radius: 50%;
     background-color: var(--mole);
 }
