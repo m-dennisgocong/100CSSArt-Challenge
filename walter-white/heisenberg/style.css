@@ -1,0 +1,134 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --background-primary: #ffffff;
+    --hat: #000000;
+    --beard: #807230;
+    --skin: #EDDFB3;
+    --mole: #DFBB9D;
+    --eye-glass: #615b48;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+.face{
+    display: grid;
+    place-items: center;
+    position: absolute;
+    height: 40vmin;
+    width: 40vmin;
+    background-color: var(--skin);
+    border-radius: 50%;
+    
+}
+/* hat */
+.face::before{
+    content: "";
+    position: absolute;
+    height: 45vmin;
+    width: 40vmin;
+    border-top: 10vmin solid var(--hat);
+    border-radius: 50%;
+}
+.face::after{
+    content: "";
+    position: absolute;
+    top:-13vmin;
+    height: 20vmin;
+    width: 36vmin;
+    border-radius: 35% 40% 0 0;
+    background-color: var(--hat); 
+}
+.hat{
+    position: absolute;
+    top: 6vmin;
+    height: 15vmin;
+    width: 55vmin;
+    border-radius: 30% 30% 45% 45%;
+    background-color: var(--hat);
+    z-index: -1;
+}
+/* beard */
+.face-hair{
+    position: absolute;
+    top: 27vmin;
+    height: 14vmin;
+    width: 14.3vmin;
+    background-color: var(--skin);
+    border: 3vmin solid var(--beard);
+    border-radius: 50%;
+}
+.face-hair::before{
+    content: "";
+    position: absolute;
+    top: 2.3vmin;
+    left: 3.2vmin;
+    height: 4vmin;
+    width: 2vmin;
+    border-radius: 25% 25% 0 0;
+    background-color: var(--beard);
+}
+.face-hair::after{
+    content: "";
+    position: absolute;
+    top: 4.7vmin;
+    left: 0vmin;
+    height: 4vmin;
+    width: 9vmin;
+    background-color: var(--beard);
+}
+.eye-glass{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 17.5vmin;
+    left: 5.4vmin;
+    height: 8vmin;
+    width: 12vmin;
+    border: 0.5vmin solid var(--eye-glass);
+    background-color: var(--skin);
+    border-radius: 45% 40% 80% 60%;
+    z-index: 50;
+}
+/* right part */
+.eye-glass::before{
+    content: "";
+    position: absolute;
+    left: 16.5vmin;
+    height: 8vmin;
+    width: 12vmin;
+    border: 0.5vmin solid var(--eye-glass);
+    background-color: var(--skin);
+    border-radius: 40% 45% 60% 80%;
+    z-index: 20;
+}
+/* bridge */
+.eye-glass::after{
+    content: "";
+    position: absolute;
+    top: 1.2vmin;
+    left: 11.6vmin;
+    height: 3vmin;
+    width: 5vmin;
+    border-top: 0.5vmin solid var(--eye-glass);
+    border-radius: 50% 50%;
+    z-index: -5;
+}
+.mole{
+    position: absolute;
+    height: 1.5vmin;
+    width: 1.5vmin;
+    bottom: 11.5vmin;
+    right: 12vmin;
+    border-radius: 50%;
+    background-color: var(--mole);
+}
