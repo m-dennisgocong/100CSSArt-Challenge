@@ -9,11 +9,15 @@ I'm always fascinated how other developer create amazing art by only using HTML 
 
 ## My art
 <ol>
-    <li>batman-logo<a href="https://codepen.io/dennisgocong/full/vYeQyEW">View Here!</a> </li>
-    <li>avocado-fruit<a href="https://codepen.io/dennisgocong/full/zYpZXjB">View Here!</a> </li>
-    <li>loading-circle-animation<a href="https://codepen.io/dennisgocong/full/QWaggKG">View Here!</a> </li>
-    <li>pixelated-sunglass<a href="https://codepen.io/dennisgocong/full/XWVadVK">View Here!</a> </li>
-    <li>twitter-logo<a href="https://codepen.io/dennisgocong/full/WNdEqpv">View Here!</a> </li>
-    <li>cat-01<a href="https://codepen.io/dennisgocong/full/dyJqzQX">View Here!</a> </li>
+    <li>batman-logo<a href="https://codepen.io/dennisgocong/pen/vYeQyEW"> View Here!</a> </li>
+    <li>avocado-fruit<a href="https://codepen.io/dennisgocong/pen/zYpZXjB"> View Here!</a> </li>
+    <li>loading-circle-animation<a href="https://codepen.io/dennisgocong/pen/QWaggKG"> View Here!</a> </li>
+    <li>pixelated-sunglass<a href="https://codepen.io/dennisgocong/pen/XWVadVK"> View Here!</a> </li>
+    <li>twitter-logo<a href="https://codepen.io/dennisgocong/pen/WNdEqpv"> View Here!</a> </li>
+    <li>cat-01<a href="https://codepen.io/dennisgocong/pen/dyJqzQX"> View Here!</a> </li>
+    <li>Walter White - Start of The Series<a href="https://codepen.io/dennisgocong/pen/jOZoKex"> View Here!</a> </li>
+    <li>Walter White - Shave Head<a href="https://codepen.io/dennisgocong/pen/yLvWqPd"> View Here!</a> </li>
+    <li>Walter White - Heisenberg<a href="https://codepen.io/dennisgocong/pen/MWQMaaL"> View Here!</a> </li>
+    <li>Walter White - Ending<a href="https://codepen.io/dennisgocong/pen/oNErbrJ"> View Here!</a> </li>
 </ol>
 
