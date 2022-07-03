@@ -5,7 +5,7 @@ I'm always fascinated how other developer create amazing art by only using HTML 
 ## Goal
 - Create css art until it reaches 100
 - Create CodePen for testing and showcasing each css art
-- Sharing it on twitter
+- Sharing it on my <a href="https://twitter.com/dennisgocong">twitter</a> account
 
 ## My art
 <ol>
