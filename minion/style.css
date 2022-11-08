@@ -1,0 +1,127 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --minion-skin: yellow;
+    --minion-pants: rgb(102, 102, 182);
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+.minion-head{
+    position: relative;
+    height: 40vmin;
+    width: 40vmin;
+    border-radius: 50%;
+    background-color: var(--minion-skin);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 300;
+}
+
+/* eye glass temple */
+.minion-head::before{
+    content: "";
+    position: absolute;
+    top: 16vmin;
+    height: 2.5vmin;
+    border-radius: 20% 20% 0 0;
+    width: 100%;
+    background-color: rgb(61, 61, 61);
+    box-shadow: 0 2vmin 0 rgb(12, 12, 12);
+    z-index: 5;
+}
+.eye{
+    position: relative;
+    top: -0.5vmin;
+    height: 2.3vmin;
+    width: 2.3vmin;
+    border-radius: 50%;
+    /* pupil */
+    background-color: #fff;
+    box-shadow: -0.8vmin 0.8vmin 0 0 #000,
+    -.2vmin 0.5vmin 0 2vmin rgb(100, 37, 0), 
+    /* iris */
+    -.2vmin 0.5vmin 0 5vmin #fff, 
+    /* eye glass frame */
+    -.2vmin 0.5vmin 0 7vmin rgb(156, 156, 156),
+    0.1vmin 0.2vmin 0 7.1vmin #fff,
+    -.5vmin .7vmin 0.1vmin 7vmin rgb(53, 53, 53,0.5);
+    z-index: 10;    
+}
+
+.mouth{
+    position: relative;
+    height: 4.5vmin;
+    width: 11.3vmin;
+    top: 13vmin;
+    /* left: 14vmin; */
+    background-color: rgba(48, 17, 0);
+    border-radius: 0 0 80% 40% / 0 0 100% 100%; 
+    z-index: 200;
+}
+/* teeth */
+.mouth::before{
+    position: absolute;
+    content: "";
+    height: 1.2vmin;
+    width: 2.2vmin;
+    border-radius: 0 0 50% 50%;
+    background-color: #fff;
+    box-shadow: 
+    0 0 0.2vmin 0.03vmin rgb(12, 12, 12, 0.5),
+    2.4vmin 0.1vmin 0 0.08vmin #fff,
+    2.3vmin 0.1vmin 0.2vmin 0.08vmin rgb(12, 12, 12, 0.5),
+    5vmin 0.2vmin 0 0.2vmin #fff,
+    5vmin 0.2vmin 0.2vmin 0.2vmin rgb(12, 12, 12, 0.5),
+    7vmin 0 0 0.002vmin #fff,
+    7vmin 0 0.3vmin 0.02vmin rgb(12, 12, 12, 0.5),
+    9vmin 0vmin 0 0.01vmin #fff,
+    9vmin 0vmin 0.2vmin 0.01vmin rgb(12, 12, 12, 0.5);
+}
+.minion-head::after{
+    content: "";
+    position: absolute;
+    height: 40vmin;
+    width: 40vmin;
+    border-radius: 50% 50% 50% 50%;
+    background-color: var(--minion-skin);
+    z-index: -5;
+}
+.neck{
+    position: relative;
+    top: -20vmin;
+    height: 20vmin;
+    width: 40vmin;
+    border-radius: 10% 10% 0 0;
+    background-color: var(--minion-skin);
+}
+.minion-body{
+    position: relative;
+    top: -25vmin;
+    height: 10vmin;
+    width: 40vmin;
+    background-color: var(--minion-skin);
+}
+.short{
+    position: absolute;
+    bottom: -15vmin;
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+    height: 15vmin;
+    width: 40vmin;
+    background-color: var(--minion-pants);
+}
+
