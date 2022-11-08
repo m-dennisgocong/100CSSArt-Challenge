@@ -19,5 +19,6 @@ I'm always fascinated how other developer create amazing art by only using HTML 
     <li>Walter White - Shave Head<a href="https://codepen.io/dennisgocong/pen/yLvWqPd"> View Here!</a> </li>
     <li>Walter White - Heisenberg<a href="https://codepen.io/dennisgocong/pen/MWQMaaL"> View Here!</a> </li>
     <li>Walter White - Ending<a href="https://codepen.io/dennisgocong/pen/oNErbrJ"> View Here!</a> </li>
+    <li>Minion<a href="https://codepen.io/dennisgocong/pen/BaVQxBQ"> View Here!</a> </li>
 </ol>
 
