@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Ball #4</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        place-content: center;
+        background-color: rgb(226, 193, 153);
+    }
+    .ball{
+        height: 40vmin;
+        width: 40vmin;
+        border-radius: 50%;
+        border: 1.5vmin solid #fff;
+        background-color: rgb(250, 169, 19);
+        position: relative;
+        display: grid;
+        place-items: center;
+    }
+    .ball::before{
+        content: "";
+        position: absolute;
+        height: 23vmin;
+        width: 23vmin;
+        top: 4vmin;
+        left: 3vmin;
+        border-radius: 50%;
+        background-color: orange;
+        box-shadow: 4vmin 3vmin 0 5.5vmin rgb(228, 150, 7);
+    }
+    /* .ball::after{
+        content: "";
+        position: absolute;
+        left: 3vmin;
+        top: 4vmin;
+        height: 23vmin;
+        width: 23vmin;
+        border-radius: 50%;
+        background-color: orange;
+    } */
+
+    .ball::after{
+        content: "";
+        position: absolute;
+        left: -.5vmin;
+        top: 1vmin;
+        height: 34vmin;
+        width: 33vmin;
+        border-radius: 50%;
+        border-right: 3.6vmin solid rgb(207, 139, 12);
+        transform: rotate(35deg);
+    }
+    .shadow{
+        height: 22vmin;
+        width: 22vmin;
+        border-radius: 50%;
+        position: absolute;
+        right: 3.5vmin;
+        bottom: 5vmin;
+        transform: rotate(35deg);
+        border-right: 4vmin solid rgb(207, 139, 12);
+        z-index: 10;
+    }
+    .white-spot{
+        height: 1.5vmin;
+        width: 3vmin;
+        position: absolute;
+        top: 4vmin;
+        right: 12vmin;
+        border-radius: 50%;
+        background-color: white;
+        z-index: 10;
+    }
+    .white-spot::after{
+        content: "";
+        position: absolute;
+        left: -15vmin;
+        top: .5vmin;
+        height: 4vmin;
+        width: 7vmin;
+        border-radius: 50%;
+        background-color: #fff;
+        transform: skewY(-30deg);
+    }
+    .white-spot::before{
+        content: "";
+        position: absolute;
+        left: -19vmin;
+        top: 9vmin;
+        height: 13vmin;
+        width: 3.5vmin;
+        border-radius: 50%;
+        background-color: #fff;
+        transform-origin: 50%;
+    }
+    .star{
+     --star-color:rgb(218, 0, 0);
+     font-size: 3vmin;
+     position: relative;
+     display: block;
+     width: 0px;
+     height: 0px;
+     border-right: 1em solid transparent;
+     border-bottom: 0.7em solid var(--star-color);
+     border-left: 1em solid transparent;
+     transform: rotate(35deg);
+     z-index: 20;
+    }
+    .star:before {
+     border-bottom: 0.8em solid var(--star-color);
+     border-left: 0.3em solid transparent;
+     border-right: 0.3em solid transparent;
+     position: absolute;
+     height: 0;
+     width: 0;
+     top: -0.45em;
+     left: -0.65em;
+     display: block;
+     content:"";
+     transform: rotate(-35deg);
+    }
+    .star:after {
+     position: absolute;
+     display: block;
+     top: 0.03em;
+     left: -1.05em;
+     width: 0;
+     height: 0;
+     border-right: 1em solid transparent;
+     border-bottom: 0.7em solid var(--star-color);
+     border-left: 1em solid transparent;
+     transform: rotate(-70deg);
+     content:"";
+    }
+    .top-left{
+        top: 10vmin;
+        left: -5vmin;
+    }
+    .top-right{
+        top: .8vmin;
+        left: 5.5vmin;
+    }
+    .bottom-right{
+        left: -5vmin;
+        bottom: -2vmin;
+    }
+    .bottom-left{
+        bottom: 7.5vmin;
+        left: 5.3vmin;
+    }
+</style>
+<body>
+    <div class="ball">
+        <div class="shadow"></div>
+        <div class="white-spot"></div>
+        <!-- <div class="star-container"> -->
+            <div class="star top-left"></div>
+            <div class="star top-right"></div>
+            <div class="star bottom-right"></div>
+            <div class="star bottom-left"></div>
+        <!-- </div> -->
+    </div>    
+</body>
+</html>
